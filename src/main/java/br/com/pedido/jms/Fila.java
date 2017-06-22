@@ -19,6 +19,7 @@ public class Fila implements MessageListener {
 	@EJB
     private ProcessaCompra processaCompra;
  
+	@Override
     public void onMessage(Message message) {
         ObjectMessage objMsg = (ObjectMessage) message;
         try {
